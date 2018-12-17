@@ -1,0 +1,5 @@
+package com.myproj.demo.persistence.config;
+
+public class PersonDAO {
+
+}

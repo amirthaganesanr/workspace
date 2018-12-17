@@ -1,0 +1,26 @@
+2018-11-27 14:37:25,083 [Worker-1: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-11-27 14:37:43,680 [Worker-7: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.companyname.bank:consumer-banking:1.0-SNAPSHOT @ C:\Users\Hasini\Desktop\Workspace\MavenApp\MavenApp2\consumer-banking\pom.xml.
+2018-11-27 14:37:45,099 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /consumer-banking/src/main/java
+2018-11-27 14:37:45,101 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /consumer-banking/src/test/java
+2018-11-27 14:37:45,306 [Worker-7: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 3 sec
+2018-11-27 14:37:47,463 [Worker-5: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-27 14:37:47,575 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Hasini\Desktop\Workspace\MavenApp\MavenApp2\consumer-banking\src\main\resources
+2018-11-27 14:37:47,578 [Worker-5: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-27 14:37:47,599 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Hasini\Desktop\Workspace\MavenApp\MavenApp2\consumer-banking\src\test\resources
+2018-11-27 14:39:59,136 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2018-11-27 14:43:11,866 [Worker-10: Launching consumer-banking] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Hasini\Desktop\Workspace\MavenApp\MavenApp2\consumer-banking
+2018-11-27 14:43:11,867 [Worker-10: Launching consumer-banking] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B package
+2018-11-27 14:43:34,664 [Worker-3: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-27 14:43:34,671 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Hasini\Desktop\Workspace\MavenApp\MavenApp2\consumer-banking\src\main\resources
+2018-11-27 14:43:34,673 [Worker-3: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-27 14:43:34,680 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Hasini\Desktop\Workspace\MavenApp\MavenApp2\consumer-banking\src\test\resources
+2018-11-27 14:43:52,132 [Worker-13: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-27 14:43:52,144 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Hasini\Desktop\Workspace\MavenApp\MavenApp2\consumer-banking\src\main\resources
+2018-11-27 14:43:52,146 [Worker-13: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-27 14:43:52,155 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Hasini\Desktop\Workspace\MavenApp\MavenApp2\consumer-banking\src\test\resources
+2018-11-27 14:46:40,636 [Worker-3: Launching Executing test in C__Users_Hasini_Desktop_Workspace_MavenApp_MavenApp2_consumer-banking] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Hasini\Desktop\Workspace\MavenApp\MavenApp2\consumer-banking
+2018-11-27 14:46:40,642 [Worker-3: Launching Executing test in C__Users_Hasini_Desktop_Workspace_MavenApp_MavenApp2_consumer-banking] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B test
+2018-11-27 14:46:44,659 [Worker-10: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-27 14:46:44,677 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Hasini\Desktop\Workspace\MavenApp\MavenApp2\consumer-banking\src\main\resources
+2018-11-27 14:46:44,688 [Worker-10: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-27 14:46:44,707 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Hasini\Desktop\Workspace\MavenApp\MavenApp2\consumer-banking\src\test\resources

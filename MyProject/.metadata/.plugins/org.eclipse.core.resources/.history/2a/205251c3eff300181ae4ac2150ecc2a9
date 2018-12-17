@@ -1,0 +1,10 @@
+package com.myproj.demo.listener;
+
+import java.util.List;
+
+import org.springframework.beans.factory.FactoryBean;
+import org.springframework.context.ApplicationContextAware;
+
+public class ServiceListener implements ApplicationContextAware, FactoryBean<List<?>>{
+
+}

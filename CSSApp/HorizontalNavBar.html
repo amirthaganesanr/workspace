@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    body
+    {
+      margin:0;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #e7e7e7;
+        background-color: #f3f3f3;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+
+    ul li {
+        display: inline;
+    }
+
+    li {
+        float: left;
+        border-right: 1px solid #bbb;
+    }
+
+    li a {
+        text-decoration: none;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #4CAF50;
+    }
+
+    div {
+        height: 1000px;
+        padding: 20px;
+    }
+    </style>
+</head>
+
+<body>
+  <h1>Scroll Down to see sticky effect</h1>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float:right"><a href="#about">About</a></li>
+    </ul>
+    <div />
+</body>
+
+</html>

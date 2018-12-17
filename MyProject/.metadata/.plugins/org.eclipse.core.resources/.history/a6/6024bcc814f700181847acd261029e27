@@ -1,0 +1,31 @@
+package com.myproj.demo.cache;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.persistence.Query;
+
+
+import com.myproj.demo.dataobjects.Person;
+import com.myproj.demo.persistence.config.AbstractDAO;
+
+import net.sf.ehcache.Cache;
+import net.sf.ehcache.CacheManager;
+
+public class LookupsLoader extends AbstractDAO<Serializable, Person> {
+	
+	public LookupsLoader()
+	{
+		
+	}
+
+	public void getData()
+	{
+		String queryString = "FROM Person";
+		Query query = getEntityManager().createQuery(queryString);
+		List<Person> persons = query.getResultList();
+		CacheManager cchm = CacheManager.getInstance();
+		cchm.addCache("lookups");
+		Cache cache = cchm.getCache("lookups");
+	}
+}

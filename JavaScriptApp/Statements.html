@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    function myFunction() {
+        document.getElementById("demo2").innerHTML = "Hello Dolly!";
+        document.getElementById("demo3").innerHTML = "How are you?";
+    }
+    </script>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+    var a;
+    var b = 1;
+    var c = 2;
+    a = b + c;
+    document.getElementById("demo").innerHTML = "Value of a is " + a;
+    document.getElementById("demo4").innerHTML = "Value of a is " + window.a; //global variable gets attached to window object
+
+    /*    In a web browser, global variables are deleted when you close the browser window (or tab), but remain available to new pages loaded into the same window.
+     */
+    </script>
+    <button onclick="myFunction()">Update both p elements</button>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    function myFunction() {
+        var str = "Microsoft Schools";
+        document.getElementById('demo0').innerHTML = str.search('Microsoft');
+        document.getElementById('demo1').innerHTML = str.search(/schools/i);
+        document.getElementById('demo2').innerHTML = str.replace('Microsoft', 'W3');
+        document.getElementById('demo3').innerHTML = str.replace(/Schools/, 'school');
+        var patt1 = /[cr]/;
+        var result = str.match(patt1);
+        document.getElementById('demo4').innerHTML = result;
+        var patt2 = /[a-z]/gi;
+        var result2 = str.match(patt2);
+        document.getElementById('demo5').innerHTML = result2;
+        var patt3 = /[c|i]/g;
+        var result3 = str.match(patt3);
+        document.getElementById('demo6').innerHTML = result3;
+        var patt4 = /[S]/;
+        document.getElementById('demo7').innerHTML = patt4.test(str);
+    }
+    </script>
+</head>
+
+<body>
+    <p id="demo0"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+    <p id="demo20"></p>
+    <p id="demo21"></p>
+    <button onClick="myFunction()">Click Me</button>
+</body>
+
+</html>

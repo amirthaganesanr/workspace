@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: translate(50px,100px); /* IE 9 */
+  -webkit-transform: translate(50px,100px); /* Safari */
+  transform: translate(50px,100px); /* Standard syntax */
+}
+
+div.class2{
+    transform:rotate(20deg);
+}
+
+div.class3{
+    transform: scale(0.5,0.5);
+}
+
+div.class4{
+    transform: skewX(20deg);
+}
+
+div.class5{
+    transform: skewY(20deg);
+}
+
+</style>
+</head>
+<body>
+
+<h1>The translate() Method</h1>
+<p>The translate() method moves an element from its current position:</p>
+
+<div>
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+
+<div class="class2">
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+
+<div class="class3">
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+
+<div class="class4">
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+
+<div class="class5">
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+package com.myproj.demo;
+
+@Path("/services")
+public class FirstService {
+
+}

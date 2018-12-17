@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML = "I am from head";
+        }
+    </script>
+    <script src = "myFirstJS.js"></script>
+</head>
+
+<body>
+    <h2>My First JavaScript</h2>
+    <button type="button" onclick="myFunction()">Call Head</button>
+    <button type="button" onclick="myBodyFunction()">Call Body</button>
+    <button type="button" onclick="myFileFunction()">Call File</button>
+    <p id="demo"></p>
+    <script>
+        function myBodyFunction()
+        {
+            document.getElementById("demo").innerHTML = "I am from body";
+        }
+    </script>
+</body>
+
+</html>

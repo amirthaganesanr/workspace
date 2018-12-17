@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    function myFunction() {
+        var time = (new Date()).getHours();
+        if (time > 20) {
+            document.getElementById('demo0').innerHTML = "Good Night";
+        } else {
+            document.getElementById('demo0').innerHTML = "Good Morning";
+        }
+        
+
+        var myDate = new Date(2018, 10, 19);
+        switch (myDate.getDay()) {
+            case 1:
+                document.getElementById('demo1').innerHTML = "Monday";
+                break;
+            case 2:
+                document.getElementById('demo1').innerHTML = "Tuesday";
+                break;
+            case 3:
+                document.getElementById('demo1').innerHTML = "Wednesday";
+                break;
+            case 4:
+                document.getElementById('demo1').innerHTML = "Thursday";
+                break;
+            case 5:
+                document.getElementById('demo1').innerHTML = "Friday";
+                break;
+            case 6:
+                document.getElementById('demo1').innerHTML = "Saturday";
+                break;
+            case 0:
+                document.getElementById('demo1').innerHTML = "Sunday";
+                break;
+            default:
+                document.getElementById('demo1').innerHTML = "Error";
+        }
+        var myElement = '';
+
+        for (i = 0; i < 10; i++) {
+            myElement = myElement + i;
+        }
+        document.getElementById('demo2').innerHTML = myElement;
+
+        var myArray = [1, 2, 3, 4, 5];
+        myElement = '';
+
+        for (a in myArray) {
+            if(a==2)
+            {
+                continue;
+            }
+            myElement = myElement + myArray[a];
+        }
+        document.getElementById('demo3').innerHTML = myElement;
+
+        var a = 0;
+
+        myElement = '';
+
+        while (a < 10) {
+            myElement = myElement + a;
+            if(a==4)
+            {
+                break;
+            }
+            a++;
+        }
+
+
+        document.getElementById('demo4').innerHTML = myElement;
+        var cars = ["BMW", "Volvo", "Saab", "Ford"];
+        var text = "";
+
+        list: {
+            text += cars[0] + "<br>";
+            text += cars[1] + "<br>";
+            break list;
+            text += cars[2] + "<br>";
+            text += cars[3] + "<br>";
+        }
+
+        document.getElementById("demo5").innerHTML = text;
+    }
+    </script>
+</head>
+
+<body>
+    <p id="demo0"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+    <p id="demo20"></p>
+    <p id="demo21"></p>
+    <button onClick="myFunction()">Click Me</button>
+</body>
+
+</html>

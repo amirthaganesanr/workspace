@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  text-align: center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.right2 {
+  float: right;
+  width: 300px;
+  margin-top:120px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+/*vertical align*/
+.paddingcenter {
+  padding: 70px 0;
+  border: 3px solid green;
+  margin-top:240px;
+  text-align: center;
+}
+
+.linecenter {
+  line-height: 200px;
+  height: 200px;
+  border: 3px solid green;
+  text-align: center;
+}
+
+.linecenter p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Center Align Elements</h2>
+<p>To horizontally center a block element (like div), use margin: auto;</p>
+
+<div class="center">
+  <p><b>Note: </b>Using margin:auto will not work in IE8, unless a !DOCTYPE is declared.</p>
+</div>
+
+<img src="background.jpeg" alt="Paris" style="width:40%">
+<div class="right">
+  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+</div>
+<div class="right2">
+  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+</div>
+
+<div class="paddingcenter">
+  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+</div>
+
+<p>In this example, we use the line-height property with a value that is equal to the height property to center the div element:</p>
+
+<div class="linecenter">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+</body>
+</html>

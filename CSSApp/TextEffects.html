@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    div {
+        white-space: nowrap;
+        width: 200px;
+        overflow: hidden;
+        border: 1px solid #000000;
+    }
+
+    div.test1 {
+        text-overflow: ellipsis;
+    }
+
+    div.test2 {
+        text-overflow: clip;
+    }
+
+    div:hover {
+        overflow: visible;
+    }
+
+    p.test {
+        width: 11em;
+        border: 1px solid #000000;
+        word-wrap: break-word;
+    }
+
+    p.test1 {
+        width: 140px;
+        border: 1px solid #000000;
+        word-break: keep-all;
+    }
+
+    p.test2 {
+        width: 140px;
+        border: 1px solid #000000;
+        word-break: break-all;
+    }
+    </style>
+</head>
+
+<body>
+    <p>Hover over the two divs below, to see the entire text.</p>
+    <div class="test1">This is some long text that will not fit in the box</div>
+    <br>
+    <div class="test2" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+    <p class="test"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+    <p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
+    <p class="test2">This paragraph contains some text. The lines will break at any character.</p>
+</body>
+
+</html>

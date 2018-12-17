@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=first/C:\/Users\/Hasini\/.m2\/repository\/org\/apache\/cxf\/cxf-rt-frontend-jaxrs\/3.1.5\/cxf-rt-frontend-jaxrs-3.1.5.jar&lt;org.apache.cxf.jaxrs.blueprint(JAXRSServerFactoryBeanDefinitionParser.class[JAXRSServerFactoryBeanDefinitionParser" modifiers="33" timestamp="1543504487424"/>
+    <typeInfo handle="=first/C:\/Users\/Hasini\/.m2\/repository\/org\/apache\/cxf\/cxf-rt-transports-http\/3.1.5\/cxf-rt-transports-http-3.1.5.jar&lt;org.apache.cxf.transport.servlet(CXFServlet.class[CXFServlet" modifiers="33" timestamp="1543504497019"/>
+    <typeInfo handle="=first/C:\/Users\/Hasini\/.m2\/repository\/org\/apache\/cxf\/cxf-rt-frontend-jaxrs\/3.1.5\/cxf-rt-frontend-jaxrs-3.1.5.jar&lt;org.apache.cxf.jaxrs.spring(JAXRSServerFactoryBeanDefinitionParser.class[JAXRSServerFactoryBeanDefinitionParser" modifiers="33" timestamp="1543504487424"/>
+    <typeInfo handle="=first/C:\/Users\/Hasini\/.m2\/repository\/org\/springframework\/spring-context\/4.1.1.RELEASE\/spring-context-4.1.1.RELEASE.jar&lt;org.springframework.context.support(PropertySourcesPlaceholderConfigurer.class[PropertySourcesPlaceholderConfigurer" modifiers="33" timestamp="1543503389178"/>
+    <typeInfo handle="=first/src\/main\/java&lt;com.myproj.demo.listener{ServiceListener.java[ServiceListener" modifiers="1" timestamp="1543530280372"/>
+    <typeInfo handle="=first/C:\/Users\/Hasini\/.m2\/repository\/javax\/xml\/bind\/jaxb-api\/2.2.7\/jaxb-api-2.2.7.jar&lt;javax.xml.bind(JAXBException.class[JAXBException" modifiers="33" timestamp="1543528311636"/>
+    <typeInfo handle="=first/C:\/Users\/Hasini\/.m2\/repository\/com\/fasterxml\/jackson\/jaxrs\/jackson-jaxrs-json-provider\/2.6.3\/jackson-jaxrs-json-provider-2.6.3.jar&lt;com.fasterxml.jackson.jaxrs.json(JacksonJaxbJsonProvider.class[JacksonJaxbJsonProvider" modifiers="33" timestamp="1543506814800"/>
+</typeInfoHistroy>

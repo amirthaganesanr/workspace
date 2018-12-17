@@ -1,0 +1,59 @@
+package com.myproj.demo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.ws.rs.core.Response;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.myproj.demo.dao.PersonDAO;
+import com.myproj.demo.dataobjects.Person;
+
+@Service
+public class FirstServiceImpl implements FirstService {
+	private static List myList = new ArrayList<Object>();
+	static {
+		class MyObject{
+			public String myName;
+
+			public String getMyName() {
+				return myName;
+			}
+
+			public void setMyName(String myName) {
+				this.myName = myName;
+			}
+		}
+		
+		MyObject myOb = new MyObject();
+		myOb.myName="Amirtha";
+		myList.add(myOb);
+	}
+	
+	@Autowired
+	PersonDAO personDAO;
+
+	
+	@Override
+	public Response myMethod() {
+		// TODO Auto-generated method stub
+		
+		return Response.ok(myList).build();
+	}
+	
+	@Override
+	public Response myDB() {
+		List<Person> result = new ArrayList<Person>();
+		result = personDAO.getPersons();
+		return Response.ok(result).build();
+	}
+	
+	@Override
+	public Response refDataValue() {
+		
+	}
+
+
+}

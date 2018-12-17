@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    //Single Line Comment
+    /*multi
+    line 
+    Comment*/
+    var fruits=['apple','orange','mango'];
+    var text;
+    function myFunction() {
+   		for(i=0;i<fruits.length;i++)
+   		{
+   			var elementName = "demo"+i;
+   			document.getElementById(elementName).innerHTML=fruits[i];
+   		}
+   		document.getElementById('demo6').innerHTML=(fruits instanceof Array);
+   		document.getElementById('demo7').innerHTML=fruits.join('*');
+   		document.getElementById('demo8').innerHTML=fruits.toString();
+
+    }
+
+    function myFunction2()
+    {
+    	text = '<ul>';
+    	fruits.forEach(myFunction3);
+    	text += '</ul>';
+    	document.getElementById('demo4').innerHTML=text;
+    }
+
+    function myFunction3(value)
+    {
+    	text += '<li>'+value+'</li>';
+    }
+    function myFunction4(value)
+    {
+    	fruits.push('Lemon');
+    }
+
+    function myPop()
+    {
+    	document.getElementById('demo9').innerHTML=fruits.pop();
+    }
+    function myShift()
+    {
+    	document.getElementById('demo10').innerHTML=fruits.shift();
+    }
+    function myUnShift()
+    {
+    	document.getElementById('demo11').innerHTML=fruits.unshift("Fruit 1");
+    }
+    function myDelete()
+    {
+    	delete fruits[0];
+    }
+    function mySplice()
+    {
+    	fruits.splice(2, 0, "Lemon", "Kiwi");
+    }
+    function myDeleteSplice()
+    {
+    	fruits.splice(2, 1, "Lemon", "Kiwi");
+    }
+    function concatenateArray()
+    {
+    	var concatenatedArray = fruits.concat(fruits, [1,2,3]);//does not modify existing array
+    	document.getElementById('demo12').innerHTML=concatenatedArray;
+    }
+    function mySlice()
+    {
+    	var fruits1 = fruits.slice(1);
+    	var fruits2= fruits.slice(1,3);
+    	document.getElementById('demo13').innerHTML=fruits1;
+    	document.getElementById('demo14').innerHTML=fruits2;
+    }
+    </script>
+</head>
+
+<body>
+    <p id="demo0"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+    <p id="demo20"></p>
+    <p id="demo21"></p>
+    <button onclick="myFunction()">Demo</button>
+    <button onclick="myFunction2()">Populate Array</button>
+    <button onclick="myFunction4()">Add Lemon</button>
+    <button onclick="myPop()">Pop</button>
+    <button onclick="myShift()">Shift</button>
+    <button onclick="myUnShift()">UnShift</button>
+    <button onclick="myDelete()">Delete</button>
+    <button onclick="mySplice()">Splice</button>
+    <button onclick="myDeleteSplice()">DeleteSplice</button>
+    <button onclick="concatenateArray()">Concatenate</button>
+    <button onclick="mySlice()">Slice Me</button>
+</body>
+
+</html>

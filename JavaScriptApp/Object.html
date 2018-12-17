@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    function myFunction() {
+        var myPerson = new person('Amirtha');
+        myPerson.addAge(20);
+        document.getElementById('demo').innerHTML = myPerson.name + ' is ' + myPerson.age + ' years old and he/she is ' + myPerson.major;
+        var myMinorPerson = new person('Kid');
+        myMinorPerson.addAge(2);
+
+        document.getElementById('demo1').innerHTML = myMinorPerson.name + ' is ' + myMinorPerson.age + ' years old and he/she is ' + myMinorPerson.major;
+
+        var myPersonObject = new Person('Amirtha', 'Ranga', 30, 'blue');
+        document.getElementById('demo3').innerHTML = myPersonObject.name();
+
+        var myPersonObject = new Person2('Amirtha', 'Ranga', 30, 'blue');
+        document.getElementById('demo4').innerHTML = myPersonObject.name();
+
+        var person1 = {
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        }
+        var person2 = {
+            firstName: "John",
+            lastName: "Doe",
+        }
+        var x = person1.fullName.call(person2);
+        document.getElementById("demo2").innerHTML = x;
+
+    }
+
+    function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+        this.name = function() {
+            return this.firstName + " " + this.lastName
+        };
+    }
+
+    function Person2(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+    }
+    //proto types allow you to add methods or properties after the constructor is defined and apply it all the child objects
+    Person2.prototype.name = function() {
+        return this.firstName + " " + this.lastName
+    };
+
+    var myFather = new Person("John", "Doe", 50, "blue");
+    document.getElementById("demo").innerHTML =
+        "My father is " + myFather.name();
+
+    function person(name) {
+        this.name = name;
+        this.addAge = addAge;
+    }
+
+    function addAge(myAge) {
+        this.age = myAge;
+        if (myAge > 18) {
+            this.major = 'a major';
+        } else {
+            this.major = 'a minor';
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <button onclick="myFunction()">Call Function</button>
+</body>
+
+</html>

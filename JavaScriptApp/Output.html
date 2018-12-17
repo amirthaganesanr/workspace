@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction()
+        {
+            //Document write clears the content of the html
+            document.write("Cleared Content");
+        }
+        function myFunction2()
+        {
+            document.getElementById('demo').innerHTML='Inner HTML content';
+        }
+    </script>
+</head>
+
+<body>
+    <h2>My First JavaScript</h2>
+    <button type="button" onclick="myFunction()">Document Write</button>
+    <button type="button" onclick="window.alert('Alert Message')">Alert Me</button>
+    <button type="button" onclick="console.log('Logging in')">Log me</button>
+    <button type="button" onclick="myFunction2()">Inner HTML</button>
+    <p id="demo"></p>
+</body>
+
+</html>

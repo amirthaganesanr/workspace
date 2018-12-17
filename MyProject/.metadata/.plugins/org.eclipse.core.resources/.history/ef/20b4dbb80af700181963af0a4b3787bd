@@ -1,0 +1,7 @@
+package com.myproj.demo.dao;
+
+public interface PersonDAO {
+	
+	public List<Person> getPersons();
+
+}

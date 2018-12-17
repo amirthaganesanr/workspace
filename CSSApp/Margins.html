@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<!-- Outside border, included outline syntax -->
+<head>
+    <style>
+    div.class1 {
+        border: 1px solid black;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 80px;
+        background-color: lightblue;
+    }
+
+    div.class2 {
+        border: 1px solid black;
+        margin: 25px 50px 75px 100px;
+        background-color: lightblue;
+    }
+
+    div.class3 {
+        border: 1px solid black;
+        margin: 25px;
+        background-color: lightblue;
+    }
+
+    div.class4 {
+        border: 1px solid black;
+        width: 100px;
+        margin: auto;
+        background-color: lightblue;
+        outline:10px solid red;
+    }
+    </style>
+</head>
+
+<body>
+    <h2>Using individual margin properties</h2>
+    <div class="class1">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+    <div class="class2">This div element has a 25px 50px 75px 100px.</div>
+    <div class="class3">This div element has a 25px</div>
+    <div class="class4">This div element has auto based on width</div>
+</body>
+
+</html>

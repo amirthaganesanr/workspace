@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    function myFunction() {
+        document.getElementById('demo0').innerHTML = new Date();
+        document.getElementById('demo1').innerHTML = new Date(2018, 1, 21, 13, 55, 50, 100);
+        //new Date(year, month, day, hours, minutes, seconds, milliseconds); can skip till month, do no skip month as it will be treated as milliseconds
+        document.getElementById('demo2').innerHTML = new Date(100000);
+        document.getElementById('demo3').innerHTML = new Date("07/12/1988"); //mm/dd/yyyy
+        document.getElementById('demo4').innerHTML = new Date().toUTCString();
+        document.getElementById('demo5').innerHTML = new Date().toDateString();
+        var msec = Date.parse("March 21, 2012");
+        var d = new Date(msec);
+        document.getElementById("demo6").innerHTML = d;
+        document.getElementById('demo7').innerHTML = new Date(0);
+
+       /* ISO Date  "2015-03-25" (The International Standard)
+Short Date  "03/25/2015"
+Long Date   "Mar 25 2015" or "25 Mar 2015"*/
+
+    }
+    </script>
+</head>
+
+<body>
+    <p id="demo0"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+    <p id="demo20"></p>
+    <p id="demo21"></p>
+    <button onClick="myFunction()">Click Me for Date</button>
+</body>
+
+</html>

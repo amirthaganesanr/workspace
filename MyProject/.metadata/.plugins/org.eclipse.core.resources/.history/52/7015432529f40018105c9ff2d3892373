@@ -1,0 +1,38 @@
+package com.myproj.demo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.ws.rs.core.Response;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class FirstServiceImpl implements FirstService {
+	private List myList = new ArrayList<Object>();
+	static {
+		class MyObject{
+			public String myName;
+
+			public String getMyName() {
+				return myName;
+			}
+
+			public void setMyName(String myName) {
+				this.myName = myName;
+			}
+		}
+		
+		MyObject myOb = new MyObject();
+		myOb.myName="Amirtha";
+	}
+
+
+	@Override
+	public Response myMethod() {
+		// TODO Auto-generated method stub
+		
+		return Response.ok(myOb).build();
+	}
+
+}

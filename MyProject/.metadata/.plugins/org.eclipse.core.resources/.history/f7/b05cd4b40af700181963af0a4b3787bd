@@ -1,0 +1,5 @@
+package com.myproj.demo.dao;
+
+public interface PersonDAO {
+
+}

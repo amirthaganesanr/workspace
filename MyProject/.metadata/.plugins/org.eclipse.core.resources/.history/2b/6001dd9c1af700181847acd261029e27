@@ -1,0 +1,24 @@
+package com.myproj.demo.dao;
+
+import java.util.List;
+
+import javax.persistence.Query;
+
+import org.springframework.stereotype.Repository;
+
+import com.myproj.demo.dataobjects.Person;
+import com.myproj.demo.persistence.config.AbstractDAO;
+
+@Repository("personDAO")
+public class PersonDAOImpl extends AbstractDAO<Long, Person> implements PersonDAO {
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Person> getPersons() {
+		// TODO Auto-generated method stub
+		String queryString ="FROM Person";
+		Query query = getEntityManager().createQuery(queryString);
+		return query.getResultList();
+	}
+
+}

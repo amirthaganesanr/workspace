@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="demo">
+        <h2>The XMLHttpRequest Object</h2>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+        <button type="button" onclick="loadDoc2()">Reviver Parameter</button>
+    </div>
+    <script>
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var myResponse = JSON.parse(this.responseText);
+                debugger;
+                myResponse.dob = new Date(Date.parse(myResponse.dob));
+                document.getElementById("demo").innerHTML = myResponse.dob;
+            }
+        };
+        xhttp.open("GET", "Date.json?t=''", true);
+        xhttp.send();
+    }
+
+    function loadDoc2() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var myResponseText = this.responseText;
+                var myResponse = JSON.parse(myResponseText, function(key, value) {
+                    if (key == "dob") {
+                        return new Date(Date.parse(value));
+                    } else {
+                        return value;
+                    }
+                });
+                debugger;
+                document.getElementById("demo").innerHTML = myResponse.person.dob;
+            }
+        }
+        xhttp.open("GET", "Date.json?t='c'", true);
+        xhttp.send();
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+package com.myproj.demo.persistence.config;
+
+import java.io.Serializable;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.hibernate.usertype.ParameterizedType;
+
+public abstract class PersonDAO<A extends Serializable, T> {
+
+	private final Class<T> persistentClass;
+
+	@PersistenceContext(unitName = "userData")
+	EntityManager entityManager;
+
+	public PersonDAO() {
+		this.persistentClass = (Class<T>)((ParameterizedType)this.getClass().getGenericSuperclass()).getActualTypeArguments()[1];
+	}
+}

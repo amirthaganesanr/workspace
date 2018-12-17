@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    /* unvisited link */
+    a:link {
+        color: red;
+    }
+
+    /* visited link */
+    a:visited {
+        color: blue;
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: hotpink;
+    }
+
+    /* selected link */
+    a:active {
+        color: blue;
+    }
+
+    a.class1:hover {
+        color: yellow;
+    }
+
+    div {
+        background-color: green;
+        color: white;
+        padding: 25px;
+        text-align: center;
+    }
+
+    div:hover {
+        background-color: blue;
+    }
+
+    div p {
+        display: none;
+        background-color: yellow;
+        padding: 20px;
+    }
+
+    div:hover p {
+        display: block;
+    }
+
+    p:first-child {
+        color: blue;
+    }
+
+    p i:first-child {
+        color: blue;
+    }
+
+    h1:first-child i {
+        color: blue;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Iam first <i>strong</i>. Iam second <i>strong</i></h1>
+    <p>First Child</p>
+    <p>Iam first <i>strong</i>. Iam second <i>strong</i></p>
+    <p>Iam first <i>strong</i>. Iam second <i>strong</i></p>
+    <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+    <p><b><a href="default.asp" target="_blank" class="class1">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+    <div>Mouse Over Me</div>
+    <div>Hover over me to show the p element
+        <p>Tada! Here I am!</p>
+    </div>
+</body>
+
+</html>

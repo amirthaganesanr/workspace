@@ -1,0 +1,16 @@
+package com.myproj.demo.dao;
+
+import java.util.List;
+
+import com.myproj.demo.dataobjects.Person;
+import com.myproj.demo.persistence.config.AbstractDAO;
+
+public class PersonDAOImpl extends AbstractDAO<Long, Person> implements PersonDAO {
+
+	@Override
+	public List<Person> getPersons() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

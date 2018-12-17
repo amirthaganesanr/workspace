@@ -1,0 +1,16 @@
+TestIgnore/
+AnotherRepo/
+apache-maven-3.6.0/
+apache-tomcat-8.5.35/
+firstrepo/
+jaxs-ri/
+MyReactApp/node_modules/
+ReactApp/node_modules/
+spring-boot-jpa-hibernate-master/
+sqldeveloper-18.3.0.277.2354-x64/
+Sublime/
+TestLocal/
+jd-gui.cfg
+Postman.lnk
+sqldeveloper.exe - Shortcut.lnk
+sublime_text.exe - Shortcut.lnk

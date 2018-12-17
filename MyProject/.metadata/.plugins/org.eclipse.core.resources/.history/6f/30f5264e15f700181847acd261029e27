@@ -1,0 +1,24 @@
+package com.myproj.demo;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class ReferenceData
+ */
+public class ReferenceData extends HttpServlet implemets Servlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public ReferenceData() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+
+}

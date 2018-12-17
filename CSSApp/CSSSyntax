@@ -1,0 +1,62 @@
+h1 {
+   color: #36CFFF; 
+}
+
+
+* { 
+   color: #000000; 
+}
+ul em {
+   color: #000000; 
+}
+
+.black {
+   color: #000000; 
+}
+
+
+h1.black {
+   color: #000000; 
+}
+
+
+#black {
+   color: #000000; 
+}
+
+h1#black {
+   color: #000000; 
+}
+
+body > p {
+   color: #000000; 
+}
+
+input[type = "text"] {
+   color: #000000; 
+}
+
+h1 {
+   color: #36C;
+   font-weight: normal;
+   letter-spacing: .4em;
+   margin-bottom: 1em;
+   text-transform: lowercase;
+}
+
+h1, h2, h3 {
+   color: #36C;
+   font-weight: normal;
+   letter-spacing: .4em;
+   margin-bottom: 1em;
+   text-transform: lowercase;
+}
+
+#content, #footer, #supplement {
+   position: absolute;
+   left: 510px;
+   width: 200px;
+}
+
+
+# - id, h1, h2 - tags, .myclass-class, ul em-descendants

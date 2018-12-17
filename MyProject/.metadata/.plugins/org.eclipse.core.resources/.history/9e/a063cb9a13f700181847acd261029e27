@@ -1,0 +1,7 @@
+package com.myproj.demo.cache;
+
+import com.myproj.demo.persistence.config.AbstractDAO;
+
+public class LookupsLoader extends AbstractDAO<A, T> {
+
+}

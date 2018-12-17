@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    h1 {
+        color: white;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    .class1 {
+        color: black;
+        text-shadow: 0px 0px 5px red;
+    }
+
+    h1.class2 {
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+    h1.class3 {
+        color: yellow;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    div.myClass {
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        background-color: yellow;
+        box-shadow: 10px 10px grey;
+        margin: 10px;
+    }
+
+    div.class4 {
+        box-shadow: 10px 10px 10px grey;
+    }
+
+    div.card {
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        margin:10px;
+    }
+
+    div.header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        font-size: 40px;
+    }
+
+    div.container {
+        padding: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Text-shadow effect!</h1>
+    <h1 class="class1">Text-shadow effect!</h1>
+    <h1 class="class2">Text-shadow effect!</h1>
+    <h1 class="class3">Text-shadow effect!</h1>
+    <p><b>Note:</b> Internet Explorer 9 and earlier versions, do not support the text-shadow property.</p>
+    <div class="myClass">This is a div element with a box-shadow</div>
+    <div class="myClass class4">This is a div element with a box-shadow</div>
+    <div class="card">
+        <div class="header">
+            <h1>1</h1>
+        </div>
+        <div class="container">
+            <p>January 1, 2016</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+package com.myproj.demo;
+
+import javax.ws.rs.core.Response;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class FirstServiceImpl implements FirstService {
+
+	@Override
+	public Response myMethod() {
+		// TODO Auto-generated method stub
+		return Response.ok("Hello World").build();
+	}
+
+}

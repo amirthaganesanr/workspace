@@ -1,0 +1,23 @@
+package com.myproj.demo.persistence.config;
+
+import javax.sql.DataSource;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+@Configuration
+@EnableTransactionManagement
+public class PersistenceConfig {
+	
+	private DataSource getDataSourceForDB()
+	{
+		DriverManagerDataSource dataSource = new DriverManagerDataSource();
+		dataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
+		dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:ganesh");
+		dataSource.setUsername("user1");
+		dataSource.setPassword("password1");
+		return dataSource;
+	}
+
+}

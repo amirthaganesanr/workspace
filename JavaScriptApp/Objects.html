@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    	//Single Line Comment
+    	/*multi
+    	line 
+    	Comment*/
+    function myFunction() {
+    	var demo1 = {identity:1, name:"Amirtha", returnName: function(){return this.name+this.identity}};
+    	document.getElementById("demo").innerHTML=demo1.identity;
+    	document.getElementById("demo2").innerHTML=demo1.name;
+    	document.getElementById("demo3").innerHTML=demo1.returnName();
+    	document.getElementById("demo4").innerHTML=demo1.returnName;
+    	
+    }
+    function myFunctionType()
+    {
+    	var a;
+    }
+    </script>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <button onclick="myFunction()">Case Sensitive</button>
+</body>
+
+</html>

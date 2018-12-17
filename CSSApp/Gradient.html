@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    #grad1 {
+        height: 200px;
+        background-color: red;
+        /* For browsers that do not support gradients */
+        background-image: linear-gradient(red, yellow);
+        /* Standard syntax (must be last) */
+    }
+
+    #grad2 {
+        height: 200px;
+        background-color: red;
+        /* For browsers that do not support gradients */
+        background-image: linear-gradient(to right, red, yellow);
+        /* Standard syntax (must be last) */
+    }
+
+    #grad3 {
+        height: 200px;
+        background-color: red;
+        /* For browsers that do not support gradients */
+        background-image: linear-gradient(to bottom right, red, yellow);
+        /* Standard syntax (must be last) */
+    }
+
+    #grad5 {
+        height: 200px;
+          background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    }
+
+    #grad4 {
+        height: 200px;
+        background-color: red;
+        background-image: linear-gradient(-90deg, violet,indigo,blue,green,yellow,orange,red);
+    }
+
+    #grad6 {
+        height: 200px;
+        background-image: repeating-linear-gradient(red, yellow 10%, green 10%);
+    }
+ #grad7 {
+        height: 200px;
+        background-image: radial-gradient(red, yellow , green);
+    }
+ #grad8 {
+        height: 200px;
+        background-image: repeating-radial-gradient(red, yellow 10%, green 10%);
+    }
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Linear Gradient - Top to Bottom</h1>
+    <p>This linear gradient starts at the top. It starts red, transitioning to yellow:</p>
+    <div id="grad1"></div>
+    <div id="grad2"></div>
+    <div id="grad3"></div>
+    <div id="grad4"></div>
+    <div id="grad5"></div>
+    <div id="grad6"></div>
+    <div id="grad7"></div>
+    <div id="grad8"></div>
+    <p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+</body>
+
+</html>

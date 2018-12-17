@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+    function Warn() {
+        alert("This is a warning message!");
+        document.getElementById('demo1').innerHTML = "This is a warning message!"; 
+    }
+
+    function getConfirmation() {
+        var retVal = confirm("Do you want to continue ?");
+        if (retVal == true) {
+        	document.getElementById('demo2').innerHTML = "User wants to continue!"; 
+            return true;
+        } else {
+            document.getElementById('demo2').innerHTML = "User does not want to continue!"; 
+            return false;
+        }
+    }
+
+    function getValue() {
+        var retVal = prompt("Enter your name : ", "your name here");
+        document.getElementById('demo3').innerHTML = "You have entered : " + retVal; 
+    }
+    </script>
+</head>
+
+<body>
+    <p>Click the following button to see the result: </p>
+    <p id='demo1'/>
+    <p id='demo2'/>
+    <p id='demo3'/>
+    <form>
+        <input type="button" value="Click Me" onclick="Warn();" />
+        <input type="button" value="Get Confirmation" onclick="getConfirmation();" />
+        <input type="button" value="Get Value" onclick="getValue();" />
+    </form>
+</body>
+
+</html>

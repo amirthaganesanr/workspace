@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    //Single Line Comment
+    /*multi
+    line 
+    Comment*/
+    var innerElement = "";
+    var innerElement2 = "";
+    var innerElement3 = "";
+    var innerElement4 = "";
+    var innerElement5 = "";
+    var innerElement6 = "";
+
+    function mainFunction() {
+        var fruits = ['apple', 'orange', 'mango'];
+        fruits.forEach(myFunction);
+        var mainElement = "<table><tbody>" + innerElement + "</tbody></table>";
+        document.getElementById('demo0').innerHTML = mainElement;
+    }
+
+    function mainFunction2() {
+        var fruits = ['apple', 'orange', 'mango'];
+        fruits.forEach(myFunction2);
+        var mainElement = "<table><tbody>" + innerElement2 + "</tbody></table>";
+        document.getElementById('demo1').innerHTML = mainElement;
+    }
+
+    function mainFunction3() {
+        var fruits = ['apple', 'orange', 'mango'];
+        var mappedFruits = fruits.map(myFunction3); //returns new array without impacting the existing array
+        mappedFruits.forEach(myFunction4);
+        var mainElement = "<table><tbody>" + innerElement3 + "</tbody></table>";
+        document.getElementById('demo2').innerHTML = mainElement;
+    }
+
+    function mainFunction4() {
+        var initialList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var filteredList = initialList.filter(myFunction5); //returns new array without impacting the existing array
+        filteredList.forEach(myFunction6);
+        var mainElement = "<table><tbody>" + innerElement4 + "</tbody></table>";
+        document.getElementById('demo3').innerHTML = mainElement;
+    }
+
+    function mainFunction6() {
+        var initialList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var result = initialList.every(myFunction9); 
+        var result2 = initialList.some(myFunction9); 
+        document.getElementById('demo5').innerHTML = result;
+        document.getElementById('demo6').innerHTML = result2;
+        document.getElementById('demo7').innerHTML = initialList.indexOf(2);
+        document.getElementById('demo8').innerHTML = initialList.find(myFunction9);
+        document.getElementById('demo9').innerHTML = initialList.findIndex(myFunction9);
+    }
+
+    function mainFunction5() {
+        var initialList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var reducedList = [];
+        reducedList.push(initialList.reduce(myFunction7)); //returns sinlge value
+        reducedList.forEach(myFunction8);
+        var mainElement = "<table><tbody>" + innerElement6 + "</tbody></table>";
+        document.getElementById('demo4').innerHTML = mainElement;
+    }
+
+    function myFunction(value, index, array) {
+        innerElement += "<tr><td>" + value + "</td><td>" + index + "</td><td>" + array + "</td></tr>";
+    }
+
+    function myFunction2(value) {
+        innerElement2 += "<tr><td>" + value + "</td><td>";
+    }
+
+    function myFunction3(value, index, array) { //it can be just value
+        return 'mapped ' + value;
+    }
+
+    function myFunction4(value, index, array) { //it can be just value
+        innerElement3 += "<tr><td>" + value + "</td><td>";
+    }
+
+    function myFunction5(value, index, array) { //it can be just value
+        return value > 5;
+    }
+
+    function myFunction6(value, index, array) { //it can be just value
+        innerElement4 += "<tr><td>" + value + "</td><td>";
+    }
+
+    function myFunction7(total, value, index, array) { //it can be just value
+        alert('total' + total);
+        alert('value' + value);
+        return total + value;
+    }
+
+    function myFunction8(value, index, array) { //it can be just value
+        innerElement5 += "<tr><td>" + value + "</td><td>";
+    }
+
+    function myFunction9(value, index, array) { //it can be just value
+        return value > 5;
+    }
+
+    function myFunction10(value, index, array) { //it can be just value
+        innerElement6 += "<tr><td>" + value + "</td><td>";
+    }
+    </script>
+</head>
+
+<body>
+    <p id="demo0"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+    <p id="demo20"></p>
+    <p id="demo21"></p>
+    <button onclick="mainFunction()">For Each</button>
+    <button onclick="mainFunction2()">For Each 2</button>
+    <button onclick="mainFunction3()">Map</button>
+    <button onclick="mainFunction4()">Filter</button>
+    <button onclick="mainFunction5()">Reduce</button>
+    <button onclick="mainFunction6()">Every</button>
+</body>
+
+</html>

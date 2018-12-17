@@ -1,0 +1,2 @@
+export const SEARCH_OFFERS = 'SEARCH_OFFERS';
+export const SEARCH_OPTIONS = 'SEARCH_OPTIONS';

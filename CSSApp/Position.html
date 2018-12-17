@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.static {
+  position: static;/*default*/
+  border: 3px solid #73AD21;
+}
+div.relative {
+  position: relative;
+  left: 30px;
+  top:20px;
+  bottom:10px;
+  border: 3px solid #73AD21;
+}
+div.scrollbar
+{
+    height:1000px;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+
+div.relative2 {
+  position: relative;
+  width: 3000px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width:'100%';
+  opacity: 0.3;
+  height:auto;
+}
+
+p.top{
+    position: absolute;
+    top:-5px;
+}
+
+p.bottom{
+    position: absolute;
+    bottom:130px;
+}
+
+p.centered{
+    position: absolute;
+    left:0;
+    top:50%;
+    width:100%;
+    text-align: center;
+}
+
+p.right{
+    position: absolute;
+    top:8px;
+    right:130px;
+}
+
+p.left{
+    position: absolute;
+    right:130px;
+    bottom:130px;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+</style>
+</head>
+<body>
+
+<h2>position: static;</h2>
+
+<p>An element with position: static; is not positioned in any special way; it is 
+always positioned according to the normal flow of the page:</p>
+
+<div class="static">
+  This div element has position: static;
+</div>
+
+<img src="background.jpeg">
+<p class="top">Top</p>
+<p class="bottom">Bottom</p>
+<p class="left">Left</p>
+<p class="centered">Centered</p>
+<p class="right">Right</p>
+
+<div class="sticky">I am sticky!</div>
+<div class="relative">
+This div element has position: relative;
+</div>
+<div class="scrollbar"></div>
+<div class="fixed">
+This div element has position: fixed;
+</div>
+<div class="relative2">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+</div>
+</body>
+</html>

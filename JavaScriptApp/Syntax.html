@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    	//Single Line Comment
+    	/*multi
+    	line 
+    	Comment*/
+    function myFunction() {
+    	var demo1 = "I am demo1";
+    	var Demo1 = "I am Demo1" 
+        document.getElementById("demo2").innerHTML = demo1;
+        document.getElementById("demo3").innerHTML = Demo1;
+    }
+    function myFunction2()
+    {
+    	document.getElementById("demo2").innerHTML = "asd"+2+2;
+    	document.getElementById("demo3").innerHTML = 2+2+"asd";
+    }
+    </script>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+    var a;
+    var b = 1;
+    var c = 2;
+    a = b + c;
+    document.getElementById("demo").innerHTML = "Value of a is " + a;
+    </script>
+    <button onclick="myFunction()">Case Sensitive</button>
+    <button onclick="myFunction2()">Left to Right Eval</button>
+</body>
+
+</html>

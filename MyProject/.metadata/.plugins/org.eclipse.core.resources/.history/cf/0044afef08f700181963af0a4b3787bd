@@ -1,0 +1,13 @@
+package com.myproj.demo.persistence.config;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+public abstract class PersonDAO<A extends Serializable, T> {
+	
+	private final class<T> persistentClass;
+	
+	@PersistenceContext(unitName = "userData")
+	EntityManager entityManager;
+
+}

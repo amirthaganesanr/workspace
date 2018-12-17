@@ -1,0 +1,11 @@
+com\myproj\demo\FirstServiceImpl.class
+com\myproj\demo\dao\PersonDAO.class
+com\myproj\demo\ReferenceData.class
+com\myproj\demo\cache\LookupsLoader.class
+com\myproj\demo\FirstService.class
+com\myproj\demo\persistence\config\PersistenceConfig.class
+com\myproj\demo\listener\ServiceListener.class
+com\myproj\demo\FirstServiceImpl$1MyObject.class
+com\myproj\demo\persistence\config\AbstractDAO.class
+com\myproj\demo\dao\PersonDAOImpl.class
+com\myproj\demo\dataobjects\Person.class

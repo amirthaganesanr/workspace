@@ -1,0 +1,31 @@
+package com.myproj.demo.persistence.config;
+
+import java.io.Serializable;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import java.lang.reflect.ParameterizedType;
+
+public abstract class AbstractDAO<A extends Serializable, T> {
+
+	private final Class<T> persistentClass;
+
+	@PersistenceContext(unitName = "userData")
+	EntityManager entityManager;
+
+	@SuppressWarnings("unchecked")
+	public AbstractDAO() {
+		this.persistentClass = (Class<T>) ((ParameterizedType) this.getClass().getGenericSuperclass())
+				.getActualTypeArguments()[1];
+	}
+	
+	
+	protected EntityManager getEntityManager() {
+		return this.entityManager;
+	}
+	
+	protected T findByKey(A key) {
+		return this.entityManager.find(persistentClass, key);
+	}
+}

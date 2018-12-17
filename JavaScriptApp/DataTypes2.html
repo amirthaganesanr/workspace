@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    function myFunction() {
+        // Data Types
+        var demo1 = "I am the String Data Type";
+        var myInteger = 1;
+        var myBoolean = false;
+        var person = { firstName: "Amirthaganesan", lastName: "Ranganathan" };
+        // Object
+        var myFirstObject = new Object();
+        myFirstObject.attribute1='Name';
+        myFirstObject.attribute2=1;
+        var myArray = new Array(1,2,3);
+        var myDate = new Date();
+        //null, undefined
+        var car;
+        var Car = null;
+
+        //case sensitive
+        var Demo1 = 'Demo1 is case Sensitive';
+
+        document.getElementById("demo").innerHTML = demo1;
+        document.getElementById("demo2").innerHTML = myInteger;
+        document.getElementById("demo3").innerHTML = myBoolean;
+        document.getElementById("demo4").innerHTML = person.firstName;
+        document.getElementById("demo5").innerHTML = person.lastName;
+        document.getElementById("demo6").innerHTML = typeof(demo1);
+        document.getElementById("demo7").innerHTML = typeof(myInteger);
+        document.getElementById("demo8").innerHTML = typeof(myBoolean);
+        document.getElementById("demo9").innerHTML = typeof(person);
+        document.getElementById("demo10").innerHTML = typeof(myFunctionType);
+        document.getElementById("demo11").innerHTML = typeof(car);
+        document.getElementById("demo12").innerHTML = typeof(Car);
+        document.getElementById("demo13").innerHTML = myFirstObject.attribute1;
+        document.getElementById("demo14").innerHTML = myFirstObject.attribute2;
+        document.getElementById("demo15").innerHTML = myArray;
+        document.getElementById("demo16").innerHTML = myDate;
+    }
+
+    function myFunctionType() {
+        var a;
+    }
+    </script>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <button onclick="myFunction()">Call My Function</button>
+</body>
+
+</html>

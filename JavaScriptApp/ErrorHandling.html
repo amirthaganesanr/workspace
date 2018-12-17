@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    function myFunction()
+    {
+        try
+        {
+            addalrt('Message');
+        }
+        catch(err)
+        {
+            document.getElementById('demo0').innerHTML = err.message;
+            document.getElementById('demo1').innerHTML = err.name;
+        }
+    }
+
+    function myFunction2()
+    {
+        try
+        {
+            throw "I am an error";
+        }
+        catch(err)
+        {
+            document.getElementById('demo2').innerHTML=err;
+        }
+        finally
+        {
+            document.getElementById('demo4').innerHTML='finally block';   
+        }
+    }
+
+    function myFunction3()
+    {
+        var input = document.getElementById('input1').value;
+        document.getElementById('demo3').innerHTML='';
+        try
+        {
+            if(isNaN(input)) throw "It is Not a Number";
+            else if(input == "") throw "It is Empty";
+            else if(input < 5) throw "It is less than 5";
+            else if(typeof(input) == 'string') throw "It is a String";
+        }
+        catch(err)
+        {
+            document.getElementById('demo3').innerHTML=err;
+        }
+    }
+
+
+    </script>
+</head>
+
+<body>
+    <input id="input1" type="text"/>
+    <p id="demo0"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+    <p id="demo20"></p>
+    <p id="demo21"></p>
+    <button onClick="myFunction()">Click Me</button>
+    <button onClick="myFunction2()">Click Me2</button>
+    <button onClick="myFunction3()">Click Me3</button>
+</body>
+
+</html>

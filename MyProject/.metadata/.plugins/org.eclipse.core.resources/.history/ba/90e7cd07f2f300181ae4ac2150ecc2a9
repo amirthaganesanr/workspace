@@ -1,0 +1,10 @@
+package com.myproj.demo;
+
+import javax.ws.rs.Path;
+
+@Path("/services")
+public interface FirstService {
+	@Path("/myMethod")
+	public Response myMethod();
+
+}

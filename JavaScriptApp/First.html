@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script>
+		function myFunction()
+		{
+			document.getElementById("demo").innerHTML = "I am from head";
+		}
+	</script>
+	<script src = "myFirstJS.js"></script>
+</head>
+
+<body>
+    <h2>My First JavaScript</h2>
+    <button type="button" onclick="document.getElementById('image').src = 'pic_bulbon.gif'">Turn On</button>
+    <button type="button" onclick="document.getElementById('image').src = 'pic_bulboff.gif'">Turn Off</button>
+    <button type="button" onclick="myFunction()">Call Head</button>
+    <button type="button" onclick="myBodyFunction()">Call Body</button>
+    <button type="button" onclick="myFileFunction()">Call File</button>
+    <p id="demo"></p>
+
+    <img src="pic_bulbon.gif" id="image"/>
+    <script>
+		function myBodyFunction()
+		{
+			document.getElementById("demo").innerHTML = "I am from body";
+		}
+	</script>
+</body>
+
+</html>

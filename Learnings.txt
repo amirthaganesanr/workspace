@@ -1,0 +1,12 @@
+ReactJs
+Javascript
+Bootstrap
+HTML
+
+Maven
+Spring Boot Restful
+Hibernate
+Jenkins
+Git Hub
+Selenium
+DevOps ones

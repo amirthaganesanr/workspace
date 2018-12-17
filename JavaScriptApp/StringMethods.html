@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    //Single Line Comment
+    /*multi
+    line 
+    Comment*/
+    function myFunction() {
+        var a = "My Name is Amirtha Ganesan";
+        document.getElementById("demo").innerHTML = a.length;
+        document.getElementById("demo2").innerHTML = a.indexOf("Amirtha");
+        document.getElementById("demo3").innerHTML = a.indexOf("a");
+        document.getElementById("demo4").innerHTML = a.lastIndexOf("a");
+        document.getElementById("demo5").innerHTML = a.indexOf("not found string");
+        document.getElementById("demo6").innerHTML = a.indexOf("a",5);//Starting Position for the Search
+        document.getElementById("demo7").innerHTML = a.search("a");
+        document.getElementById("demo8").innerHTML = a.slice(11,18);
+        document.getElementById("demo9").innerHTML = a.slice(-7,-1);
+        document.getElementById("demo10").innerHTML = a.slice(11);
+        document.getElementById("demo11").innerHTML = a.slice(-7);
+        document.getElementById("demo12").innerHTML = a.substring(11,18);//substring() is similar to slice().
+        document.getElementById("demo13").innerHTML = a.substr(11,7);//The difference is that the second parameter //specifies the length of the extracted part.
+        document.getElementById("demo14").innerHTML = a.substr(-7);
+        document.getElementById("demo15").innerHTML = a.replace("Amirtha Ganesan","Amirtha");
+        document.getElementById("demo16").innerHTML = a.slice(11,19).concat(a.slice(-7));
+        document.getElementById("demo17").innerHTML = '   My Name   '.trim()+';';
+        document.getElementById("demo18").innerHTML = a.charAt(1);
+        document.getElementById("demo19").innerHTML = a.charCodeAt(1);
+        document.getElementById("demo20").innerHTML = a[1];
+        var myArray = [];
+        myArray = a.split(" ");
+        document.getElementById("demo21").innerHTML = myArray;
+
+    }
+    </script>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+    <p id="demo20"></p>
+    <p id="demo21"></p>
+    <button onclick="myFunction()">Demo</button>
+</body>
+
+</html>

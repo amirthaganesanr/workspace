@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    function myFunction() {
+        var txt = '{ "name": "John", "age": 20 }';
+        var myJSON = JSON.parse(txt);
+        document.getElementById('demo').innerHTML = myJSON.name + ' is ' + myJSON.age + ' years old.'
+        document.getElementById('demo1').innerHTML = JSON.stringify(myJSON);
+        var person = { firstName: "Amirthaganesan", lastName: "Ranganathan", get getFullName() { return this.firstName + ' ' + this.lastName }, set setFirstName(value) { this.firstName = value } };
+        document.getElementById('demo2').innerHTML = person.getFullName;
+        person.setFirstName = "Amirtha";
+        document.getElementById('demo3').innerHTML = person.getFullName;
+        Object.defineProperty(person, "lastName", { value: 'Ranga' });
+        document.getElementById('demo4').innerHTML = person.getFullName;
+        var i = 5;
+        for (var x in person) {
+            alert(x);
+            var elementName = 'demo' + i;
+            document.getElementById(elementName).innerHTML = person[x];
+            i++;
+        }
+
+    }
+    </script>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <button onclick="myFunction()">Call Function</button>
+</body>
+
+</html>

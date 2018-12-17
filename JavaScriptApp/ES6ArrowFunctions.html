@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    function myFunction() {
+
+        //ES6
+        const y = (a,b) => { return a*b};
+        document.getElementById('demo').innerHTML = y(5,5);
+        const x = (a,b) => a*b;
+        document.getElementById('demo1').innerHTML = x(6,6);
+
+        //ES5
+
+        var c = function(a,b){ return a*b};
+        document.getElementById('demo2').innerHTML = c(6,6);
+    }
+    </script>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <button onclick="myFunction()">Call Function</button>
+</body>
+
+</html>

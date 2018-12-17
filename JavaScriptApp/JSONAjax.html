@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var myResponse = JSON.parse(this.responseText);
+        debugger;
+      document.getElementById("demo").innerHTML = myResponse.person.firstName+myResponse.person.lastName;
+    }
+  };
+  xhttp.open("GET", "JSON.json?t='a'", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>

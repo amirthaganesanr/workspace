@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <br />
+        <br />
+        <br />
+        <script>
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover();
+        });
+        </script>
+        <a href="#" data-toggle="popover" title="Popover Header" data-placement="left" data-content="Some content inside asdkjlaskdjhalkdsj askldjalksdjalksdjlkasjd klasjd lkasjd lkasjd ">Toggle popover</a>
+        <button class="btn btn-primary" data-toggle="popover" title="Popover Header" data-trigger="focus" data-content="Some content inside asdkjlaskdjhalkdsj askldjalksdjalksdjlkasjd klasjd lkasjd lkasjd ">Pop Over</button>
+        <button class="btn btn-primary" data-toggle="popover" title="Popover Header" data-trigger="hover" data-content="Some content inside asdkjlaskdjhalkdsj askldjalksdjalksdjlkasjd klasjd lkasjd lkasjd ">Hover Over</button>
+    </div>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var x = 6; 
+    function myFunction() {
+        var x = 10;
+        if (x == 10) {
+            var x = 5;
+            debugger;
+        }
+        document.getElementById('demo').innerHTML = x;
+    }
+
+    function myFunction2() {
+        var x = 10;
+        if (x == 10) {
+            let x = 5;
+            debugger;
+        }
+        document.getElementById('demo1').innerHTML = x;
+    }
+
+    function myFunction3(){
+        const a = 10;
+        //a = 5; - not allowed
+        const b = {a1:1, a2:2}; // amending constants properties are allowed
+        b.a1 = 3;
+        document.getElementById('demo2').innerHTML = x;
+        document.getElementById('demo3').innerHTML = b.a1+b.a2;
+    }
+    </script>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <button onclick="myFunction()">Call Function</button>
+    <button onclick="myFunction2()">Call Function2</button>
+    <button onclick="myFunction3()">Call Function3</button>
+</body>
+
+</html>
