@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello world</title>
+</head>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+   var socket = io();
+function myFunction() {
+    var socket = io('/my-namespace');
+    socket.on('hi', function(data) {
+        document.body.innerHTML = '';
+        document.write(data);
+    });
+}
+</script>
+
+<body><button onClick=myFunction()>Click Me</button></body>
+
+</html>
