@@ -3,15 +3,11 @@ import ReactDOM from 'react-dom';
 
 class MyComponent extends React.Component {
   render() {
-    const ref = React.createRef();
-    const checkChanges = () => {
-      console.log(ref.current.value);
-    }
-    const updateValue = () => {
-      ref.current.value='444';
-    }
+    const renderElement = this.props.render('passed from component');
     return (
-      <input type="text" ref={ref} onChange={checkChanges} onBlur={updateValue}/>
+      <div className="Parent">
+        {renderElement}
+      </div>
     );
   }
 }
