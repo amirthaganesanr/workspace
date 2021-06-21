@@ -1,22 +1,28 @@
-import { ADD_ARTICLE } from "../constants/action-types";
+import { ADD_ARTICLE, ADD_ITEM } from "../constants/action-types";
 
 const initialState = {
-  articles: []
+  articles: [],
+  items: [],
 };
 
 function appReducer(state = initialState, action) {
   switch (action.type) {
     case ADD_ARTICLE: {
       const payload = action.payload;
-      const updatedArticles = [...state.articles, payload];
       return {
-        ...initialState,
-        articles: updatedArticles,
+        ...state,
+        articles: [...state.articles, payload],
       }
     }
-    default: {
-      return initialState;
+    case ADD_ITEM: {
+      const payload = action.payload;
+      return {
+        ...state,
+        items: [...state.items, payload],
+      }
     }
+    default:
+      return state;
   }
 };
 
