@@ -14,7 +14,7 @@
 		<java.version>1.8</java.version>
 		<cxf-version>3.1.5</cxf-version>
 		<jackson-version>2.6.3</jackson-version>
-		<spring-web.version>4.1.1.RELEASE</spring-web.version>
+		<spring-web.version>5.2.22.RELEASE</spring-web.version>
 		<commons.lang.version>3.2</commons.lang.version>
 		<hibernate-core.version>4.3.8.Final</hibernate-core.version>
 		<hibernate-jpa-2.1.version>1.0.0.Final</hibernate-jpa-2.1.version>
