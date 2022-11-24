@@ -16,7 +16,7 @@
 		<jackson-version>2.6.3</jackson-version>
 		<spring-web.version>4.1.1.RELEASE</spring-web.version>
 		<commons.lang.version>3.2</commons.lang.version>
-		<hibernate-core.version>4.3.8.Final</hibernate-core.version>
+		<hibernate-core.version>5.3.20.Final</hibernate-core.version>
 		<hibernate-jpa-2.1.version>1.0.0.Final</hibernate-jpa-2.1.version>
 		<hibernate-entitymanager.version>4.3.8.Final</hibernate-entitymanager.version>
 		<ojdbc14.version>10.2.0.2.0</ojdbc14.version>
